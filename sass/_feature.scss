@@ -1,0 +1,104 @@
+.feature{
+    padding-top: 80px;
+    &__title{
+        font-size: 22px;
+        line-height: calc(33 / 22);
+        font-weight: 700;
+        color: $heading-color;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+    &__heading{
+        font-size: 46px;
+        line-height: calc(57 / 46);
+        font-weight: 400;
+        color: $heading-color;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+    &__desc{
+        line-height: calc(20 / 16);
+        letter-spacing: 0.2px;
+        color: $text-color;
+        max-width: 298px;
+        text-align: center;
+        margin: 0 auto 90px;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 52px;
+        align-self: center;
+    }
+    // &__main{
+    //     max-width: 255px;
+    // }
+    &__item{
+        display: flex;
+        align-items: center; 
+        margin-bottom: 20px;
+    }
+    &__main-title{
+        font-size: 22px;
+        line-height: calc(33 / 22);
+        font-weight: 700;
+        color: $heading-color;
+        padding: 10px;
+        // margin-bottom: 10px;
+        max-width: 207PX;
+    }
+    &__main-desc{
+        font-size: 18px;
+        line-height: calc(27 / 18);
+        letter-spacing: 0.2px;
+        max-width: 255px;
+        color: $text-color;
+        padding: 10px 0;
+        margin-bottom: 90px;
+        flex-grow: 0;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+   .feature{
+    padding-top: 81px;
+    margin-bottom: 108px;
+    &__title{
+        margin-bottom: 17px;
+    }
+    &__heading{
+        margin-bottom: 27px;
+    }
+    &__desc{
+        margin: 0 auto 88px;
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 570px;
+        gap:88px 90px;
+        margin: 0 auto;
+    }
+    // &__main{
+    //     max-width: 270px;
+       
+    // }
+    &__item{
+        display: flex;
+        align-items: center; 
+        gap: 0 10px;
+        margin-bottom: 20px;
+    }
+    &__main-title{
+       margin-bottom: 0;
+       padding: 0;
+       max-width: 227px;
+    }
+    &__main-desc{
+        padding: 0;
+        margin-bottom: 0px;
+     }
+   }    
+}
+

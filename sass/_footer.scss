@@ -1,0 +1,114 @@
+.footer{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 0 55px; 
+    }
+    &__page{
+        width: 186px;
+        &-title{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 33px;
+            color: $heading-color;
+            letter-spacing: 0.1px;
+            margin-top: 10px;
+            margin-bottom: 25px; 
+        }
+        &-list{
+            display: flex;
+            flex-direction: column;
+            gap: 16px 0;
+        }
+        &-item{
+            list-style-type: none;
+            text-decoration: none; 
+           
+        }
+        &-link{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: calc(27 / 15);
+            color: $heading-color;
+            letter-spacing: 0.2px;  
+            margin-bottom: 16px;
+        }  
+    }
+    &__addr{
+        display: flex;
+        align-items: center;
+        gap:0 10px;
+        color: $text-color;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        margin-bottom: 10px;
+        &-desc{
+            max-width: 228px;
+            padding: 10px;
+        }
+    }
+    &__infor{
+       margin-top: 17px;
+    }
+    &__mxh{
+        margin-top: 40px;
+        display: flex;
+        gap: 0 24px;
+        &-img {
+            width: 41px;
+            height: 41px;
+            object-fit: cover;
+        }
+    }
+    &__map{
+        margin-top: 10px;
+        margin-bottom:10px;
+        width: 472px;
+        height: 247px;
+        object-fit: cover;
+    }   
+}
+@media only screen and (max-width: 1025px) {
+    .footer{
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            gap: 0 25px; 
+            padding: 0 15px;
+        }  
+        &__page{
+            width: auto;
+        } 
+    }
+}
+@media only screen and (max-width: 769px) {
+    .footer{
+        padding-bottom: 130px;
+        &__container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+        &__page{
+            width: 100%;
+            margin-bottom: 55px;
+            text-align: center;
+        }
+        &__map{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 0 30px;
+            margin-bottom:65px;
+            border-radius: 22px;
+        }   
+    }
+}

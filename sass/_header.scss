@@ -1,0 +1,192 @@
+.header{
+     width: 100%;
+     background-image:url(../images/Rectangle8.png), url(../images/Rectangle9.png); 
+     background-repeat: no-repeat;
+     padding-bottom: 104px;
+    &__container{
+        width: 100%;
+        padding-top:38px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    &__main{
+        display: flex;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 0 21px;
+        margin-right: 44px;
+        max-width: 442px;
+    }
+    &__item{
+        list-style-type: none;
+        text-decoration: none;
+    }
+    &__link{
+        font-size: 15px;
+        line-height: calc(27 / 15);
+        color: $white-color;
+        letter-spacing: 0.2px;
+        font-weight: 400;
+        padding: 10px;
+    }
+    &__logo{
+        margin-left: 40px;  
+        margin-right: 262px;
+        padding: 10px; 
+    }
+    &__form{
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
+    }
+    &__input input{
+        width: 273px;
+        height: 54px;
+        background-color: $input-header;
+        border: 1px solid #E8E8E8;
+        border-radius: 39px;
+        padding: 19px 0 19px 39px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: calc(16 / 14);
+        color: $input-color;
+        letter-spacing: 0.1px;
+        font-family: $font;
+        &::placeholder{
+            color: $input-color;
+        }
+    }
+    &__focus{
+        margin-top: 104px;
+        display: flex;
+        gap:0 60px;
+    }
+    &__img-mobile{
+        display: none;
+    }
+    &__img img{
+        margin: 26px 26px 26px 0;
+        background: rgba(0, 0, 0, 0.0001);
+        box-shadow: 0px 9.86057px 19.7211px rgba(0, 0, 0, 0.16), 0px 9.86057px 131.474px rgba(0, 0, 0, 0.23);
+        border-top-right-radius: 8px;
+    }
+    &__title{
+        font-size: 55px;
+        font-size: 900;
+        line-height: calc(66 / 55);
+        letter-spacing: 0.2px;
+        max-width: 321px;
+        margin-bottom: 17px;
+        margin-top: 64px;
+        &-mobile{
+            display: none;
+        }
+    }
+    &__desc{
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        margin-bottom: 70px;
+        max-width: 298px;
+        padding: 10px 0;
+    }
+    &__menu-mobile{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1225px) {
+    .header{
+        &__form{
+            display: none;
+        }
+        &__focus{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap-reverse;
+            gap: 0 75px;
+            padding: 0 19px;
+            margin: 0;
+       }
+    }
+}
+@media only screen and (max-width: 769px) {
+    .header{
+        padding-top: 28px;
+        padding-bottom: 80px;
+        width: 100%;
+       &__menu-mobile{
+            display: block;
+            margin-right: 26px;
+       }
+       &__container{
+            display: block;
+            padding-top: 0;
+            padding-bottom: 117px;
+        }
+       &__logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 26px;  
+            margin-right: 0px;
+            padding: 0;
+       }
+       &__main{
+            display: none;
+       }
+       &__focus{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap-reverse;
+            gap: 0 75px;
+            padding: 0 19px;
+            margin: 0;
+       }
+       &__title{
+            display: none;
+            margin-top: 0;
+            &-mobile{
+                display: flex;
+                max-width: 296px;
+                font-weight: 400;
+                font-size: 46px;
+                line-height: 57px;
+                margin-bottom: 27px; 
+            }
+       }
+        &__desc{  
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 75.5px;
+        }   
+}
+
+}
+
+@media only screen and (max-width: 419px) {
+    .header{
+        background-image:url(../images/Rectangle8-mobile.png), url(../images/Rectangle9-mobile.png); 
+        &__img {
+            margin: 0 auto;
+            &-pc{
+                display: none;
+            }
+            &-mobile{
+                display: block;
+            }
+        }
+         &__img img{
+            margin: 0;
+            background: rgba(0, 0, 0, 0.0001);
+            box-shadow: 0px 3.93374px 7.86747px rgba(0, 0, 0, 0.16), 0px 3.93374px 52.4498px rgba(0, 0, 0, 0.23);
+        }
+    }
+
+}
